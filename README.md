@@ -10,6 +10,14 @@
 
 This web application is designed to help users prepare for the IELTS reading, listening, and writing modules by simulating real test conditions. The app offers interactive features such as a countdown timer, PDF question uploads, and real-time word count tracking to create an efficient and effective learning experience.
 
+
+<h2>Screenshots</h2>
+<b>Writing Module:</b>
+<img src="contents/Screenshot1.jpg" width="100%" alt="Screenshot" title="Writing Module" /></br>
+<b>Reading Module:</b>
+<img src="contents/Screenshot2.jpg" width="100%" alt="Screenshot" title="Reading Module" />
+
+
 ## Features
 
 ### 🌟 General
