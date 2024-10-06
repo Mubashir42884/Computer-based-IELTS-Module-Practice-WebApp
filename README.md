@@ -1,4 +1,12 @@
 # Computer-based IELTS Module Practice Web Application
+<div align="center">
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Mubashir42884/Computer-based-IELTS-Module-Practice-WebApp)
+![GitHub watchers](https://img.shields.io/github/watchers/Mubashir42884/Computer-based-IELTS-Module-Practice-WebApp)
+![GitHub Repo stars](https://img.shields.io/github/stars/Mubashir42884/Computer-based-IELTS-Module-Practice-WebApp)
+
+</div>
 
 This web application is designed to help users prepare for the IELTS reading, listening, and writing modules by simulating real test conditions. The app offers interactive features such as a countdown timer, PDF question uploads, and real-time word count tracking to create an efficient and effective learning experience.
 
@@ -52,6 +60,13 @@ This web application is designed to help users prepare for the IELTS reading, li
 
 ## Future Enhancements
 - **Feedback System**: An upcoming feature where users will receive feedback and band score predictions for their writing tasks using ChatGPT.
+
+## 🛡️ License
+
+This project is licensed under the **MIT License**. 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
 
 ## Contributions
 Feel free to submit pull requests or create issues if you want to contribute or encounter any problems.
