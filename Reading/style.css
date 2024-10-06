@@ -1,0 +1,303 @@
+body {
+    font-family: Quicksand;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 65px;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #333;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: #4032ff;
+    border: #4032ff 2px dashed;
+}
+
+h3 {
+    font-family: Quicksand;
+    font-size: 16px;
+    text-align: left;
+    justify-content: space-around;
+    margin: 0px;
+    color: #4032ff;
+}
+
+.button2 {
+    padding: 12px 12px;
+    font-size: 26px;
+    background-color: #bce8ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+}
+
+.button2:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    gap: 20px;                /* Space between the button and timer */
+    flex-direction: row;      /* Arrange the button and timer side by side */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#timer {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff0000;
+    text-align: center;
+}
+
+.home-btn {
+    font-family: Quicksand;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 8px 12px;
+    background-color: #bce8ff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #003450;
+    border-radius: 15px;
+    border-style: dotted;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.home-btn:hover {
+    background-color: #003450;
+    color: #bce8ff;
+    border: 2px solid #bce8ff;
+    border-radius: 15px;
+    border-style: dotted;
+}
+
+.control-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #32ff9f;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.control-btn2 {
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: #9bdcff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.control-btn2:hover {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #32ff9f;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+
+.control-btn:disabled {
+    font-size: 18px;
+    padding: 10px 17px;
+    border-radius: 15px;
+    background-color: #ff6464;
+}
+
+.control-btn:hover:disabled {
+    color: rgb(0, 0, 0);
+    background-color: #9bdcff;
+}
+
+.control-btn:hover:enabled {
+    font-size: 18px;
+    padding: 10px 17px;
+    border-radius: 15px;
+    background-color: #ff6464;
+}
+
+.timer-format {
+    color: #9a0000;
+    font-family: Quicksand;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.light-mode {
+    background-color: rgb(201, 240, 249); 
+    color: #212221;             
+}
+
+.light-mode .button2 {
+    background-color: #212221;
+    color: rgb(201, 240, 249);
+}
+
+.section-wrapper {
+    display: flex;
+    width: 100%; /* Use 100% width of the container */
+    height: 100vh;
+}
+
+.left-section,
+.right-section {
+    padding: 10px;
+    height: 105vh;
+    background-color: #d2d3ff;
+    border: 5px solid #4032ff;
+    box-sizing: border-box;
+}
+
+.left-section {
+    width: 60%; /* Left section takes 60% of the width */
+    display: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-button-container {
+    display: flex;
+    justify-content: space-around; /* Positions buttons side-by-side */
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.big-button {
+    font-size: 22px;
+    padding: 5px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.file-upload-section {
+    margin-top: 1px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.upload-buttons-container {
+    display: flex; /* Align items in a row */
+    align-items: left; /* Vertically center the buttons */
+    gap: 2px; /* Add gap between buttons */
+    font-size: 22px;
+}
+
+.upload-buttons-container input[type="file"] {
+    display: inline-block;
+}
+
+.upload-buttons-container .view-button {
+    width: 135px;
+    font-family: Quicksand;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 10px;
+    background-color: #4032ff;
+    color: rgb(255, 255, 255);
+    border: 2px solid #4032ff;
+    border-color: #4032ff;
+    cursor: pointer;
+    border-radius: 35px;
+    margin-right: 20px;
+}
+
+.view-button:hover {
+    background-color: #32ff9f;
+    color: rgb(0, 0, 0);
+    border: 2px solid #4032ff;
+    cursor: pointer;
+    border-radius: 35px;
+}
+
+.upload-box{
+    width: 18%;
+    text-align: left;
+    align-items: left;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 90%;
+    border: 2px solid #000;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    overflow: auto;
+    display:flex;
+    background-color: #333;
+}
+
+.audio-controls {
+    margin-top: 20px;
+}
+
+.right-section {
+    width: 40%; /* Right section takes 40% of the width */
+    padding: 10px;
+    background-color: #d2d3ff;
+}
+
+.answer-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-box {
+    width: 240px;
+    padding: 6px;
+    margin: 5px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #4032ff;
+}

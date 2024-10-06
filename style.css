@@ -1,0 +1,126 @@
+body {
+    font-family: Quicksand;
+    display: flex;
+    background: url('contents/main-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    text-align: center;
+    padding: 50px;
+}
+.title {
+    font-size: 75px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+.modules {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.module1 {
+    background-color: rgba(201, 170, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+    height: 650px;
+    box-shadow: 0 0 10px rgba(44, 0, 121, 0.8);
+}
+
+.module1:hover {
+    background-color: rgba(255, 205, 238, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+    height: 650px;
+    box-shadow: 0 0 10px rgba(205, 0, 0, 0.8);
+    transition: all 0.9s ease;
+}
+
+.module2 {
+    background-color: rgba(170, 255, 215, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+    height: 650px;
+    box-shadow: 0 0 10px rgba(0, 61, 3, 0.8);
+}
+
+.module2:hover {
+    background-color: rgba(255, 205, 238, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+    height: 650px;
+    box-shadow: 0 0 10px rgba(205, 0, 0, 0.8);
+    transition: all 0.9s ease;
+}
+
+.module3 {
+    background-color: rgba(161, 210, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+    height: 650px;
+    box-shadow: 0 0 10px rgba(0, 33, 61, 0.8);
+}
+
+.module3:hover {
+    background-color: rgba(255, 205, 238, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    width: 530px;
+    height: 650px;
+    box-shadow: 0 0 10px rgba(205, 0, 0, 0.8);
+    transition: all 0.9s ease;
+}
+
+.module1 h2 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+.module1 p {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.module1 a {
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(76, 0, 255);
+    text-decoration: underline;
+}
+
+.module2 h2 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+.module2 p {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.module2 a {
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(76, 0, 255);
+    text-decoration: underline;
+}
+
+.module3 h2 {
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+.module3 p {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.module3 a {
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(76, 0, 255);
+    text-decoration: underline;
+}

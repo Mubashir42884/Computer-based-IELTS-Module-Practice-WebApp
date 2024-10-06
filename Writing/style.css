@@ -1,0 +1,190 @@
+body {
+    font-family: Quicksand;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+    background-color: #212221; 
+    color: white;
+    padding: 50px;
+    padding-bottom:140px;
+    border-radius: 10px;
+    height: 900px;
+    width: 1920px;
+    transition: background-color 1.0s, color 1.8s;
+}
+
+button {
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4eff8c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 20px;
+}
+
+.button2 {
+    padding: 12px 12px;
+    font-size: 26px;
+    background-color: #bce8ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 20px;
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+}
+
+.button3 {
+    text-align: right;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 900;
+    background-color: #4e57ff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.button2:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-out;
+}
+
+.button3:hover {
+    background-color: #fff09c;
+}
+
+.light-mode {
+    background-color: rgb(201, 240, 249); 
+    color: #212221;             
+}
+
+.light-mode .button2 {
+    background-color: #212221;
+    color: rgb(201, 240, 249);
+}
+
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    text-decoration: underline #006093 2px ;
+    margin-bottom: 30px;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#timer {
+    font-size: 48px;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.home-btn {
+    font-family: Quicksand;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 8px 12px;
+    background-color: #bce8ff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #003450;
+    border-radius: 15px;
+    border-style: dotted;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.home-btn:hover {
+    background-color: #003450;
+    color: #bce8ff;
+    border: 2px solid #bce8ff;
+    border-radius: 15px;
+    border-style: dotted;
+}
+
+.control-btn {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 28px;
+    background-color: #4eff8c;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.control-btn:disabled {
+    background-color: #ff6464;
+}
+
+.control-btn:hover:disabled {
+    background-color: #a8c9ff;
+}
+
+.control-btn:hover:enabled {
+    background-color: #c1a6ff;
+}
+
+textarea {
+    width: 95%;
+    height: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    transition: background-color 0.3s; 
+    color: black; 
+}
+
+.light-mode textarea {
+    background-color: white; 
+    color: rgb(255, 0, 0);            
+}
+
+/* Dark mode styling for textarea */
+.dark-mode textarea {
+    background-color: rgb(0, 0, 0); 
+    color: rgb(255, 255, 255);     
+}
+
+
+
+textarea:disabled {
+    background-color: #b6b6b6;
+}
+
+#wordCount {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #ff0000;
+    font-weight: bolder;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timer and Word Count</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body>
+
+    <div class="container">
+        <button id="toggleMode" class="button2">☀️</button>
+
+        <h1>1 Hour Timer and Word Counter For IELTS Writing Task Practice</h1>
+        <div class="timer-controls">
+            <button class="home-btn" title="Home" onclick="location.href='../index.html'">HOME</button>
+            <button id="startTimer" class="control-btn" title="Start"> ⯈ </button>
+            <button id="stopTimer" class="control-btn" title="Pause" disabled> ■ </button>
+            <button id="reloadTimer" class="button3" title="Reload"> ↻ </button>
+        </div>
+        <div id="timer">01:00:00</div>
+        <h3><i>*NOTE: Press the start button to write in the textarea. You can pause the timer but won't be able to 
+            write until you press the play button again. Press reload button to start from the beginning.</i></h3>
+
+        <textarea id="textInput" placeholder="Start typing here..."></textarea>
+
+        <div id="wordCount">Total Word Count: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
