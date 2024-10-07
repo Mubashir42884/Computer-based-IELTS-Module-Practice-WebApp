@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IELTS Reading and Listening Practice</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -46,54 +48,264 @@
         <!-- Right Section -->
         <div class="right-section">
             <h2>Answer Sheet</h2>
+            <div id="scoreDisplay" class="score-display">Score: 0/40</div>
             <div class="answer-inputs">
                 <!-- 40 small input fields for answers -->
                 <div class="answer-column">
                     <!-- Column 1: 20 inputs -->
-                    <input  type="text" class="answer-box" placeholder="1">
-                    <input  type="text" class="answer-box" placeholder="2">
-                    <input  type="text" class="answer-box" placeholder="3">
-                    <input  type="text" class="answer-box" placeholder="4">
-                    <input  type="text" class="answer-box" placeholder="5">
-                    <input  type="text" class="answer-box" placeholder="6">
-                    <input  type="text" class="answer-box" placeholder="7">
-                    <input  type="text" class="answer-box" placeholder="8">
-                    <input  type="text" class="answer-box" placeholder="9">
-                    <input  type="text" class="answer-box" placeholder="10">
-                    <input  type="text" class="answer-box" placeholder="11">
-                    <input  type="text" class="answer-box" placeholder="12">
-                    <input  type="text" class="answer-box" placeholder="13">
-                    <input  type="text" class="answer-box" placeholder="14">
-                    <input  type="text" class="answer-box" placeholder="15">
-                    <input  type="text" class="answer-box" placeholder="16">
-                    <input  type="text" class="answer-box" placeholder="17">
-                    <input  type="text" class="answer-box" placeholder="18">
-                    <input  type="text" class="answer-box" placeholder="19">
-                    <input  type="text" class="answer-box" placeholder="20">
+            
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="1">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="2">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="3">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="4">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="5">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="6">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="7">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="8">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="9">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="10">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+
+                    <!-- PART-2 -->
+                    
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="11">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="12">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="13">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="14">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="15">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="16">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="17">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="18">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="19">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="20">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
                     <!-- Repeat for all inputs -->
                 </div>
+
                 <div class="answer-column">
-                    <!-- Column 2: 20 inputs -->
-                    <input  type="text" class="answer-box" placeholder="21">
-                    <input  type="text" class="answer-box" placeholder="22">
-                    <input  type="text" class="answer-box" placeholder="23">
-                    <input  type="text" class="answer-box" placeholder="24">
-                    <input  type="text" class="answer-box" placeholder="25">
-                    <input  type="text" class="answer-box" placeholder="26">
-                    <input  type="text" class="answer-box" placeholder="27">
-                    <input  type="text" class="answer-box" placeholder="28">
-                    <input  type="text" class="answer-box" placeholder="29">
-                    <input  type="text" class="answer-box" placeholder="30">
-                    <input  type="text" class="answer-box" placeholder="31">
-                    <input  type="text" class="answer-box" placeholder="32">
-                    <input  type="text" class="answer-box" placeholder="33">
-                    <input  type="text" class="answer-box" placeholder="34">
-                    <input  type="text" class="answer-box" placeholder="35">
-                    <input  type="text" class="answer-box" placeholder="36">
-                    <input  type="text" class="answer-box" placeholder="37">
-                    <input  type="text" class="answer-box" placeholder="38">
-                    <input  type="text" class="answer-box" placeholder="39">
-                    <input  type="text" class="answer-box" placeholder="40">
+                    <!-- PART-3 -->
+                
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="21">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="22">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="23">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="24">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="25">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="26">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="27">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="28">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="29">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="30">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+
+                    <!-- PART-4 -->
+                    
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="31">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="32">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="33">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="34">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="35">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="36">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="37">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="38">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="39">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
+                    <div class="answer-row">
+                        <input type="text" class="answer-box" placeholder="40">
+                        <button class="correct-btn"><i class="fa-solid fa-circle-check"></i></button>
+                        <button class="wrong-btn"><i class="fa-regular fa-circle-xmark"></i></button>
+                        <input type="text" class="solve-box" placeholder="Solve:" disabled hidden>
+                    </div>
                     <!-- Repeat for all inputs -->
                 </div>
             </div>

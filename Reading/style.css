@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #d2d3ff;
 }
 
 .container {
@@ -175,21 +175,23 @@ h3 {
 
 .section-wrapper {
     display: flex;
-    width: 100%; /* Use 100% width of the container */
+    width: 100%;
+    gap: 10px;
     height: 100vh;
 }
 
 .left-section,
 .right-section {
     padding: 10px;
-    height: 105vh;
+    height: 100vh;
     background-color: #d2d3ff;
     border: 5px solid #4032ff;
+    border-radius: 20px;
     box-sizing: border-box;
 }
 
 .left-section {
-    width: 60%; /* Left section takes 60% of the width */
+    width: 65%;
     display: relative;
     flex-direction: column;
     align-items: center;
@@ -197,7 +199,7 @@ h3 {
 
 .big-button-container {
     display: flex;
-    justify-content: space-around; /* Positions buttons side-by-side */
+    justify-content: space-around;
     width: 100%;
     margin-bottom: 5px;
 }
@@ -220,10 +222,11 @@ h3 {
 }
 
 .upload-buttons-container {
-    display: flex; /* Align items in a row */
-    align-items: left; /* Vertically center the buttons */
-    gap: 2px; /* Add gap between buttons */
+    display: flex;
+    align-items: center; 
+    gap: 2px;
     font-size: 22px;
+    justify-content: center;
 }
 
 .upload-buttons-container input[type="file"] {
@@ -255,18 +258,21 @@ h3 {
 }
 
 .upload-box{
-    width: 18%;
+    width: 20%;
     text-align: left;
     align-items: left;
     margin-left: 0px;
     margin-right: 5px;
+    border: #4032ff;
+    border-radius: 2px;
 }
 
 .pdf-viewer {
     width: 100%;
-    height: 90%;
+    height: 865px;
     border: 2px solid #000;
-    margin-top: 35px;
+    border-radius: 15px;
+    margin-top: 10px;
     margin-bottom: 0px;
     overflow: auto;
     display:flex;
@@ -286,6 +292,7 @@ h3 {
 .answer-inputs {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .answer-column {
@@ -293,11 +300,58 @@ h3 {
     flex-direction: column;
 }
 
+.answer-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
 .answer-box {
-    width: 240px;
+    width: 200px;
     padding: 6px;
-    margin: 5px 0;
     font-size: 16px;
     border-radius: 5px;
     border: 2px solid #4032ff;
+    margin-right: 10px;
+}
+
+.solve-box {
+    width: 50px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #4032ff;
+    margin-right: 10px;
+}
+
+.correct-btn, .wrong-btn {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.correct-btn i {
+    font-size: 20px;
+    color: #01a828;
+}
+
+.wrong-btn i {
+    font-size: 20px;
+    color: #ff4356;
+}
+
+.correct-btn:hover i, .wrong-btn:hover i {
+    opacity: 0.5;
+}
+
+.score-display {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #4032ff;
 }
