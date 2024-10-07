@@ -185,3 +185,47 @@ function updateProgressBar(currentTime, duration) {
     const percentage = (currentTime / duration) * 100;
     progressBar.style.width = `${percentage}%`;
 }
+
+
+// Score Calculation
+
+const correctButtons = document.querySelectorAll('.correct-btn');
+const wrongButtons = document.querySelectorAll('.wrong-btn');
+const scoreDisplay = document.getElementById('scoreDisplay');
+
+let score = 0;
+const totalInputs = 40;
+
+// Add event listeners to all correct buttons
+correctButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Mark this button as clicked and prevent multiple score increments
+        if (!button.classList.contains('clicked')) {
+            button.classList.add('clicked');
+            wrongButtons[index].classList.remove('clicked'); // Unmark the wrong button if it was clicked
+            score++;
+            updateScore();
+        }
+    });
+});
+
+// Add event listeners to all wrong buttons
+wrongButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Mark this button as clicked and decrement the score if previously marked as correct
+        if (!button.classList.contains('clicked')) {
+            button.classList.add('clicked');
+            correctButtons[index].classList.remove('clicked'); // Unmark the correct button if it was clicked
+            if (score > 0 && correctButtons[index].classList.contains('clicked')) {
+                score--;
+            }
+            updateScore();
+        }
+    });
+});
+
+// Update the score display
+function updateScore() {
+    scoreDisplay.textContent = `Score: ${score}/${totalInputs}`;
+}
+

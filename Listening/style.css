@@ -14,7 +14,8 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 5px;
+    padding: 15px;
+    padding-bottom: 15px;
     box-sizing: border-box;
 }
 
@@ -30,7 +31,7 @@ h1 {
 
 h2 {
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 58px;
     text-align: center;
     font-size: 40px;
     color: #005e4c;
@@ -46,12 +47,34 @@ h3 {
     color: #005e4c;
 }
 
+.notes {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    color: #ff6464;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: none;
+}
+
+.parts {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    color: #005e4c;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: none;
+}
+
 /*-------AUDIO CONTROLS---------*/
 
 .controls-container {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -262,21 +285,22 @@ input[type="file"] {
 .section-wrapper {
     display: flex;
     width: 100%;
-    /* Use 100% width of the container */
+    gap: 10px;
     height: 100vh;
 }
 
 .left-section,
 .right-section {
     padding: 10px;
-    height: 105vh;
+    height: 115vh;
     background-color: #ccfff5;
     border: 5px solid #005e4c;
+    border-radius: 20px;
     box-sizing: border-box;
 }
 
 .left-section {
-    width: 60%;
+    width: 55%;
     /* Left section takes 60% of the width */
     display: relative;
     flex-direction: column;
@@ -310,7 +334,7 @@ input[type="file"] {
 
 .upload-buttons-container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: left;
     gap: 15px;
     font-size: 18px;
@@ -359,7 +383,7 @@ input[type="file"] {
 
 .pdf-viewer {
     width: 100%;
-    height: 820px;
+    height: 870px;
     border: 2px solid #000;
     margin-top: 5px;
     margin-bottom: 0px;
@@ -373,8 +397,7 @@ input[type="file"] {
 }
 
 .right-section {
-    width: 40%;
-    /* Right section takes 40% of the width */
+    width: 45%;
     padding: 10px;
     background-color: #ccfff5;
 }
@@ -389,11 +412,44 @@ input[type="file"] {
     flex-direction: column;
 }
 
+.answer-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
 .answer-box {
     width: 240px;
     padding: 6px;
-    margin: 5px 0;
     font-size: 16px;
     border-radius: 5px;
     border: 2px solid #005e4c;
+    margin-right: 10px;
+}
+
+.correct-btn, .wrong-btn {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.correct-btn i {
+    color: #28a745;
+}
+
+.wrong-btn i {
+    color: #dc3545;
+}
+
+.correct-btn:hover i, .wrong-btn:hover i {
+    opacity: 0.8;
+}
+
+.score-display {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
