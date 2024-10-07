@@ -4,18 +4,18 @@ const pauseButton = document.getElementById('stopTimer');
 const timerDisplay = document.getElementById('timer');
 const reloadBtn = document.getElementById('reloadBtn');
 
-
-// Timer functionality
+// Stopwatch functionality
 let timer;
-let time = 3600; // 1 hour in seconds
+let time = 0; // Start from 0 seconds
 let timerRunning = false;
+const maxTime = 3599; // Maximum time of 59 minutes and 59 seconds (1 hour - 1 second)
 
-// Start the timer
+// Start the stopwatch
 function startTimer() {
     if (!timerRunning) {
         timerRunning = true;
-        pauseButton.disabled = false; // Enable stop button
-        clearInterval(timer); // Clear any existing timer
+        pauseButton.disabled = false; // Enable pause button
+        clearInterval(timer); // Clear any existing interval
 
         // Update the display immediately when starting
         const updateDisplay = () => {
@@ -26,12 +26,12 @@ function startTimer() {
         };
 
         timer = setInterval(() => {
-            if (time <= 0) {
-                clearInterval(timer);
-                timerRunning = false; // Timer stops running
-                pauseButton.disabled = true; // Disable stop button when time is up
+            if (time >= maxTime) {
+                clearInterval(timer); // Stop when we reach max time (59:59)
+                timerRunning = false;
+                pauseButton.disabled = true; // Disable pause button when time is up
             } else {
-                time--; // Decrement time
+                time++; // Increment time
                 updateDisplay(); // Update the display
             }
         }, 1000);
@@ -40,12 +40,12 @@ function startTimer() {
     }
 }
 
-// Stop the timer
+// Stop the stopwatch
 function stopTimer() {
     if (timerRunning) {
         clearInterval(timer); // Stop the timer
         timerRunning = false; // Timer is not running anymore
-        pauseButton.disabled = true; // Disable stop button
+        pauseButton.disabled = true; // Disable pause button
     }
 }
 
@@ -53,7 +53,7 @@ function stopTimer() {
 startButton.addEventListener('click', startTimer);
 pauseButton.addEventListener('click', stopTimer);
 
-// Function to reload the entire page
+// Function to reload the page (reset the stopwatch)
 function reloadTimer() {
     location.reload(); // Reload the current page
 }
@@ -61,6 +61,7 @@ function reloadTimer() {
 // Reload button functionality
 const reloadButton = document.getElementById('reloadTimer');
 reloadButton.addEventListener('click', reloadTimer);
+
 
 // Element references
 const readingTestBtn = document.getElementById('readingTestBtn');

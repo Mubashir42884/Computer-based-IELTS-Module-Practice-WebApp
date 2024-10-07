@@ -31,7 +31,7 @@ h1 {
 
 h2 {
     margin-top: 10px;
-    margin-bottom: 58px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 40px;
     color: #005e4c;
@@ -173,13 +173,9 @@ input[type="file"] {
 .timer-controls {
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     gap: 20px;
-    /* Space between the button and timer */
     flex-direction: row;
-    /* Arrange the button and timer side by side */
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -383,7 +379,7 @@ input[type="file"] {
 
 .pdf-viewer {
     width: 100%;
-    height: 870px;
+    height: 900px;
     border: 2px solid #000;
     margin-top: 5px;
     margin-bottom: 0px;
@@ -405,6 +401,7 @@ input[type="file"] {
 .answer-inputs {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .answer-column {
@@ -419,7 +416,7 @@ input[type="file"] {
 }
 
 .answer-box {
-    width: 240px;
+    width: 200px;
     padding: 6px;
     font-size: 16px;
     border-radius: 5px;
@@ -437,7 +434,7 @@ input[type="file"] {
 }
 
 .correct-btn, .wrong-btn {
-    padding: 8px;
+    padding: 5px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -446,19 +443,23 @@ input[type="file"] {
 }
 
 .correct-btn i {
+    font-size: 18px;
     color: #28a745;
 }
 
 .wrong-btn i {
+    font-size: 18px;
     color: #dc3545;
 }
 
 .correct-btn:hover i, .wrong-btn:hover i {
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 .score-display {
-    font-size: 18px;
+    font-size: 32px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-top: 58px;
+    text-align: center;
+    color: #005e4c;
 }
