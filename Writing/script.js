@@ -16,7 +16,7 @@ textInput.disabled = true;
 function startTimer() {
     if (!timerRunning) {
         timerRunning = true;
-        textInput.disabled = false; // Enable text input when timer is running
+        textInput.disabled = false; 
         clearInterval(timer);
         timer = setInterval(() => {
             if (time <= 0) {
