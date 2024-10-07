@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IELTS Reading and Listening Practice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Page Title -->
+        <h1>IELTS Computer-based Reading Test Practice</h1>
+
+        <div class="timer-controls">
+            <button class="home-btn" title="Home" onclick="location.href='../index.html'">HOME</button>
+            <button id="startTimer" class="control-btn" title="Start">⯈</button>
+            <button id="stopTimer" class="control-btn" title="Pause" disabled>■</button>
+            <button id="reloadTimer" class="control-btn2" title="Reload"> ↻ </button>
+            <div id="timer">Timer: 01:00:00</div> <!-- Initial time set to 1 hour -->
+        </div>
+
+        <!-- Main Section Wrapper -->
+        <div class="section-wrapper">
+            <!-- Left Section -->
+            <div class="left-section">
+
+                <!-- File Upload Section -->
+                <div id="fileUploadSection" class="file-upload-section">
+
+                    <div class="upload-buttons-container">
+                        <h3>Upload Question:</h3>
+                        <input class="upload-box" type="file" id="pdfUploadQuestion" accept=".pdf">
+                        <button id="viewQuestionButton" class="view-button">View Question</button>
+                        <h3>Upload Audio:</h3>
+                        <input class="upload-box" type="file" id="audioUpload" accept=".mp3">
+                    </div>
+
+                    <!-- Control Buttons and Progress Container -->
+                    <div class="controls-container">
+                        <div class="controls">
+                            <button id="playButton" disabled title="Upload Audio File first..."><i class="fa-solid fa-play"></i></button>
+                            <button id="pauseButton" disabled title="Upload Audio File first..."><i class="fa-solid fa-pause"></i></button>
+                            <button id="restartButton" disabled title="Upload Audio File first..."><i class="fa-solid fa-repeat"></i></button>
+                            <button id="stopButton" disabled title="Upload Audio File first..."><i class="fa-solid fa-stop"></i></button>
+                        </div>                        
+
+                        <div class="progress-container">
+                            <div class="progress">
+                                <div class="progress-bar" id="progressBar"></div>
+                            </div>
+                            <div class="timer">
+                                <span id="currentTime">0:00</span>
+                                <span id="durationTime">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Viewer Section -->
+                <div id="pdfViewer" class="pdf-viewer">
+                    <!-- The uploaded PDF will be displayed here -->
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <h2>Answer Sheet</h2>
+                <div class="answer-inputs">
+                    <!-- 40 small input fields for answers -->
+                    <div class="answer-column">
+                        <!-- Column 1: 20 inputs -->
+                        <input type="text" class="answer-box" placeholder="1">
+                        <input type="text" class="answer-box" placeholder="2">
+                        <input type="text" class="answer-box" placeholder="3">
+                        <input type="text" class="answer-box" placeholder="4">
+                        <input type="text" class="answer-box" placeholder="5">
+                        <input type="text" class="answer-box" placeholder="6">
+                        <input type="text" class="answer-box" placeholder="7">
+                        <input type="text" class="answer-box" placeholder="8">
+                        <input type="text" class="answer-box" placeholder="9">
+                        <input type="text" class="answer-box" placeholder="10">
+                        <input type="text" class="answer-box" placeholder="11">
+                        <input type="text" class="answer-box" placeholder="12">
+                        <input type="text" class="answer-box" placeholder="13">
+                        <input type="text" class="answer-box" placeholder="14">
+                        <input type="text" class="answer-box" placeholder="15">
+                        <input type="text" class="answer-box" placeholder="16">
+                        <input type="text" class="answer-box" placeholder="17">
+                        <input type="text" class="answer-box" placeholder="18">
+                        <input type="text" class="answer-box" placeholder="19">
+                        <input type="text" class="answer-box" placeholder="20">
+                        <!-- Repeat for all inputs -->
+                    </div>
+                    <div class="answer-column">
+                        <!-- Column 2: 20 inputs -->
+                        <input type="text" class="answer-box" placeholder="21">
+                        <input type="text" class="answer-box" placeholder="22">
+                        <input type="text" class="answer-box" placeholder="23">
+                        <input type="text" class="answer-box" placeholder="24">
+                        <input type="text" class="answer-box" placeholder="25">
+                        <input type="text" class="answer-box" placeholder="26">
+                        <input type="text" class="answer-box" placeholder="27">
+                        <input type="text" class="answer-box" placeholder="28">
+                        <input type="text" class="answer-box" placeholder="29">
+                        <input type="text" class="answer-box" placeholder="30">
+                        <input type="text" class="answer-box" placeholder="31">
+                        <input type="text" class="answer-box" placeholder="32">
+                        <input type="text" class="answer-box" placeholder="33">
+                        <input type="text" class="answer-box" placeholder="34">
+                        <input type="text" class="answer-box" placeholder="35">
+                        <input type="text" class="answer-box" placeholder="36">
+                        <input type="text" class="answer-box" placeholder="37">
+                        <input type="text" class="answer-box" placeholder="38">
+                        <input type="text" class="answer-box" placeholder="39">
+                        <input type="text" class="answer-box" placeholder="40">
+                        <!-- Repeat for all inputs -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
