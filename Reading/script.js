@@ -143,7 +143,7 @@ correctButtons.forEach((button, index) => {
 // Add event listeners to all wrong buttons
 wrongButtons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        // Mark this button as clicked and decrement the score if previously marked as correct
+
         if (!button.classList.contains('clicked')) {
             button.classList.add('clicked');
             correctButtons[index].classList.remove('clicked'); // Unmark the correct button if it was clicked
