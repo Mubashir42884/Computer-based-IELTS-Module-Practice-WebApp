@@ -311,12 +311,10 @@ input[type="file"] {
 
 .upload-buttons-container {
     display: flex;
-    /* Align items in a row */
+    justify-content: left;
     align-items: left;
-    /* Vertically center the buttons */
-    gap: 2px;
-    /* Add gap between buttons */
-    font-size: 22px;
+    gap: 15px;
+    font-size: 18px;
 }
 
 .upload-buttons-container input[type="file"] {
@@ -324,19 +322,23 @@ input[type="file"] {
 }
 
 .upload-buttons-container .view-button {
-    width: 135px;
+    width: auto;
+    height: 35px;
     font-family: Quicksand;
     font-weight: bolder;
     text-align: center;
     font-size: 16px;
-    padding: 3px 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     background-color: #4032ff;
     color: rgb(255, 255, 255);
     border: 2px solid #4032ff;
     border-color: #4032ff;
     cursor: pointer;
-    border-radius: 35px;
-    margin-right: 20px;
+    border-radius: 15px;
+    margin-right: 5px;
 }
 
 .view-button:hover {
@@ -348,18 +350,19 @@ input[type="file"] {
 }
 
 .upload-box {
-    width: 18%;
+    width: 24%;
     text-align: left;
     align-items: left;
+    padding-top: 5px;
     margin-left: 0px;
     margin-right: 5px;
 }
 
 .pdf-viewer {
     width: 100%;
-    height: 90%;
+    height: 820px;
     border: 2px solid #000;
-    margin-top: 35px;
+    margin-top: 5px;
     margin-bottom: 0px;
     overflow: auto;
     display: flex;
