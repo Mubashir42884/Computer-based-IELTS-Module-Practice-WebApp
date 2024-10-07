@@ -191,6 +191,7 @@ function updateProgressBar(currentTime, duration) {
 
 const correctButtons = document.querySelectorAll('.correct-btn');
 const wrongButtons = document.querySelectorAll('.wrong-btn');
+const solveBoxes = document.querySelectorAll('.solve-box'); // Select all solve boxes
 const scoreDisplay = document.getElementById('scoreDisplay');
 
 let score = 0;
@@ -203,6 +204,8 @@ correctButtons.forEach((button, index) => {
         if (!button.classList.contains('clicked')) {
             button.classList.add('clicked');
             wrongButtons[index].classList.remove('clicked'); // Unmark the wrong button if it was clicked
+            solveBoxes[index].disabled = true; // Disable the solve box if the answer is correct
+            solveBoxes[index].hidden = true; // Hide the solve box if the answer is correct
             score++;
             updateScore();
         }
@@ -219,6 +222,8 @@ wrongButtons.forEach((button, index) => {
             if (score > 0 && correctButtons[index].classList.contains('clicked')) {
                 score--;
             }
+            solveBoxes[index].disabled = false; // Enable the solve box if the answer is wrong
+            solveBoxes[index].hidden = false; // Unhide the solve box if the answer is wrong
             updateScore();
         }
     });

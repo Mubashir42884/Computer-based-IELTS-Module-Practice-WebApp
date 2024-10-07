@@ -427,6 +427,15 @@ input[type="file"] {
     margin-right: 10px;
 }
 
+.solve-box {
+    width: 50px;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #005e4c;
+    margin-right: 10px;
+}
+
 .correct-btn, .wrong-btn {
     padding: 8px;
     border: none;
