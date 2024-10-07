@@ -16,6 +16,8 @@ This web application is designed to help users prepare for the IELTS reading, li
 <img src="contents/Screenshot1.jpg" width="100%" alt="Screenshot" title="Writing Module" /></br>
 <b>Reading Module:</b>
 <img src="contents/Screenshot2.jpg" width="100%" alt="Screenshot" title="Reading Module" />
+<b>Listening Module:</b>
+<img src="contents/Screenshot3.jpg" width="100%" alt="Screenshot" title="Listening Module" />
 
 
 ## Features
@@ -37,7 +39,7 @@ This web application is designed to help users prepare for the IELTS reading, li
 - **Answer Sheet**: An interactive answer sheet with 40 fields to input your answers.
 
 ### 🎧 Listening Module
-(Will be Published soon)
+(Already Published)
 - **Audio and PDF Upload**: Upload the listening test audio file and questions in PDF format.
 - **Audio Player**: Play uploaded audio files for listening practice.
 - **Answer Sheet**: Similar to the reading module, an answer sheet is provided to input answers during the test.
