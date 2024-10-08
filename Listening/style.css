@@ -58,6 +58,17 @@ h3 {
     padding: none;
 }
 
+.numbering {
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    color: #005e4c;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    padding: none;
+}
+
 .parts {
     font-family: Quicksand;
     font-size: 20px;
@@ -296,7 +307,7 @@ input[type="file"] {
 }
 
 .left-section {
-    width: 55%;
+    width: 58%;
     display: relative;
     flex-direction: column;
     align-items: center;
@@ -393,30 +404,32 @@ input[type="file"] {
 }
 
 .right-section {
-    width: 45%;
+    width: 42%;
     padding: 10px;
     background-color: #ccfff5;
 }
 
 .answer-inputs {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: left;
+    gap: 2px;
 }
 
 .answer-column {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5px;
 }
 
 .answer-row {
     display: flex;
-    align-items: center;
     margin-bottom: 5px;
 }
 
 .answer-box {
-    width: 200px;
+    position: flex;
+    width: 160px;
     padding: 6px;
     font-size: 16px;
     border-radius: 5px;
@@ -443,13 +456,13 @@ input[type="file"] {
 }
 
 .correct-btn i {
-    font-size: 18px;
-    color: #28a745;
+    font-size: 20px;
+    color: #01a828;
 }
 
 .wrong-btn i {
-    font-size: 18px;
-    color: #dc3545;
+    font-size: 20px;
+    color: #ff4356;
 }
 
 .correct-btn:hover i, .wrong-btn:hover i {
@@ -459,7 +472,8 @@ input[type="file"] {
 .score-display {
     font-size: 32px;
     font-weight: bold;
-    margin-top: 58px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-align: center;
     color: #005e4c;
 }

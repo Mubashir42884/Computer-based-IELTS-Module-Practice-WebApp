@@ -46,6 +46,28 @@ h3 {
     color: #4032ff;
 }
 
+.notes {
+    font-family: Quicksand;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    color: #ff6464;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: none;
+}
+
+.numbering {
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    color: #4032ff;
+    margin-top: 2px;
+    margin-bottom: 14px;
+    margin-right: 2px;
+}
+
 .button2 {
     padding: 12px 12px;
     font-size: 26px;
@@ -291,23 +313,25 @@ h3 {
 
 .answer-inputs {
     display: flex;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: left;
+    gap: 2px;
 }
 
 .answer-column {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5px;
 }
 
 .answer-row {
     display: flex;
-    align-items: center;
     margin-bottom: 5px;
 }
 
 .answer-box {
-    width: 200px;
+    position: flex;
+    width: 160px;
     padding: 6px;
     font-size: 16px;
     border-radius: 5px;
