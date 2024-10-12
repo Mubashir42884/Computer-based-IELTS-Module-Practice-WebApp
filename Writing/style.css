@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 850px;
+    height: 910px;
     margin: 0;
     background-color: #212221;
 }
@@ -15,7 +15,7 @@ body {
     padding: 50px;
     padding-bottom:140px;
     border-radius: 10px;
-    height: 750px;
+    height: 800px;
     width: 100%;
     transition: background-color 1.0s, color 1.8s;
 }
@@ -71,42 +71,6 @@ button {
     background-color: #fff09c;
 }
 
-.light-mode {
-    background-color: rgb(201, 240, 249); 
-    color: #212221;             
-}
-
-.light-mode .button2 {
-    background-color: #212221;
-    color: rgb(201, 240, 249);
-}
-
-
-h1 {
-    font-size: 65px;
-    margin-top: 5px;
-    margin-bottom: 2px;
-}
-
-h3 {
-    font-size: 18px;
-    text-decoration: underline #006093 2px ;
-    margin-bottom: 15px;
-}
-
-.timer-controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-#timer {
-    font-size: 42px;
-    margin: 5px 5px 5px 5px;
-    font-weight: bold;
-    color: #ff0000;
-}
-
 .home-btn {
     font-family: Quicksand;
     font-weight: bolder;
@@ -142,6 +106,10 @@ h3 {
     border-radius: 10px;
 }
 
+.control-btn:hover {
+    background-color: #c1a6ff;
+}
+
 .control-btn:disabled {
     background-color: #ff6464;
 }
@@ -152,6 +120,42 @@ h3 {
 
 .control-btn:hover:enabled {
     background-color: #c1a6ff;
+}
+
+.light-mode {
+    background-color: rgb(201, 240, 249); 
+    color: #212221;             
+}
+
+.light-mode .button2 {
+    background-color: #212221;
+    color: rgb(201, 240, 249);
+}
+
+
+h1 {
+    font-size: 65px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+h3 {
+    font-size: 18px;
+    text-decoration: underline #006093 2px ;
+    margin-bottom: 15px;
+}
+
+.timer-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#timer {
+    font-size: 42px;
+    margin: 5px 5px 5px 5px;
+    font-weight: bold;
+    color: #ff0000;
 }
 
 textarea {
