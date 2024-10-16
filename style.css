@@ -21,50 +21,50 @@ body {
     gap: 20px;
 }
 .module1 {
-    background-color: rgba(201, 170, 255, 0.8);
+    background-color: #d2d3ff8a;
     border-radius: 15px;
     padding: 20px;
     width: 530px;
     height: 650px;
-    box-shadow: 0 0 10px rgba(44, 0, 121, 0.8);
+    box-shadow: 0 0 10px #4032ffce;
 }
 
 .module1:hover {
-    background-color: rgba(255, 205, 238, 0.8);
+    background-color: rgba(255, 205, 238, 0.5);
     border-radius: 15px;
     padding: 20px;
     width: 530px;
     height: 650px;
-    box-shadow: 0 0 10px rgba(205, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(205, 0, 0, 0.7);
     transition: all 0.9s ease;
 }
 
 .module2 {
-    background-color: rgba(170, 255, 215, 0.8);
+    background-color: #bce8ff8a;
     border-radius: 15px;
     padding: 20px;
     width: 530px;
     height: 650px;
-    box-shadow: 0 0 10px rgba(0, 61, 3, 0.8);
+    box-shadow: 0 0 10px #003450ce;
 }
 
 .module2:hover {
-    background-color: rgba(255, 205, 238, 0.8);
+    background-color: rgba(255, 205, 238, 0.5);
     border-radius: 15px;
     padding: 20px;
     width: 530px;
     height: 650px;
-    box-shadow: 0 0 10px rgba(205, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(205, 0, 0, 0.7);
     transition: all 0.9s ease;
 }
 
 .module3 {
-    background-color: rgba(161, 210, 255, 0.8);
+    background-color: #ccfff58a;
     border-radius: 15px;
     padding: 20px;
     width: 530px;
     height: 650px;
-    box-shadow: 0 0 10px rgba(0, 33, 61, 0.8);
+    box-shadow: 0 0 10px #005e4cce;
 }
 
 .module3:hover {
